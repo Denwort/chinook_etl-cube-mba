@@ -1,0 +1,11 @@
+SELECT Fact_Sales.id_sale, Fact_Sales.unit_price, Fact_Sales.quantity, Fact_Sales.total, Dim_Track.id_track, Dim_Track.name AS track_name, Dim_Track.milliseconds, Dim_Track.bytes, Dim_Album.id_album, Dim_Album.title AS album_title, Dim_MediaType.id_mediatype, Dim_MediaType.name AS mediatype_name, Dim_Genre.id_genre, Dim_Genre.name AS genre_name, Dim_Artist.id_artist, Dim_Artist.name AS artist_name, Dim_Customer.id_customer, Dim_Customer.firstName AS customer_firstName, Dim_Customer.lastName AS customer_lastName, Dim_Customer.adress AS customer_adress, Dim_Customer.city AS customer_city, Dim_Customer.country AS customer_country, Dim_Date.id_date, Dim_Date.dateValue, Dim_Date.year, Dim_Date.semester, Dim_Date.quarter, Dim_Date.month, Dim_Date.dayOfTheWeek, Dim_Date.numSemester, Dim_Date.numQuarter, Dim_Date.numMonth, Dim_Date.numDayOfTheWeek, Dim_Date.numDay, Dim_Employee.id_employee, Dim_Employee.firstName AS employee_firstName, Dim_Employee.lastName AS employee_lastName, Dim_Employee.title as employee_title, Dim_Employee.birthDate AS employee_birthDate, Dim_Employee.hireDate AS employee_hireDate, Dim_Employee.address AS employee_adress, Dim_Employee.city AS employee_city, Dim_Employee.country AS employee_country, Dim_Invoice.id_invoice, Dim_Invoice.billingAddress, Dim_Invoice.billingCity, Dim_Invoice.billingcountry FROM Fact_Sales
+INNER JOIN Dim_Track ON Fact_Sales.id_track = Dim_Track.id_track
+INNER JOIN Dim_Album ON Dim_Track.id_album = Dim_Album.id_album
+INNER JOIN Dim_MediaType ON Dim_Track.id_mediatype = Dim_MediaType.id_mediatype
+INNER JOIN Dim_Genre ON Dim_Track.id_genre = Dim_Genre.id_genre
+INNER JOIN Dim_Artist ON Fact_Sales.id_artist = Dim_Artist.id_artist
+INNER JOIN Dim_Customer ON Fact_Sales.id_customer = Dim_Customer.id_customer
+INNER JOIN Dim_Date ON Fact_Sales.id_date = Dim_Date.id_date
+INNER JOIN Dim_Employee ON Fact_Sales.id_employee = Dim_Employee.id_employee
+INNER JOIN Dim_Invoice ON Fact_Sales.id_invoice = Dim_Invoice.id_invoice
+ORDER BY Fact_Sales.id_sale

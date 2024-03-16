@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Proyecto</Database>
+    <Server>PC\NUEVO</Server>
+    <ConnectionString>Data Source=PC\NUEVO;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>TKGm4L7MChGocOGfv54qC/H7RQM=16/02/2024 15:45:0816/02/2024 15:45:08</TimeStamp>
+        <ID>
+          <String>Chinook MART</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>cFc8DO8IODDZEIDAYGY434jzVIE=16/02/2024 15:46:1716/02/2024 15:45:23</TimeStamp>
+        <ID>
+          <String>Chinook MART</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FOQYf69nfQO1v0++DL4d2/Idq/Q=16/02/2024 16:00:2516/02/2024 15:46:17</TimeStamp>
+        <ID>
+          <String>Dim Track</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JlPM3Ycpz/a90Mz2cevciozLxSI=16/02/2024 15:51:0116/02/2024 15:50:46</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>u4SaeR7iMZc9WPd0QJ4Hxfwm/cc=16/02/2024 15:51:3616/02/2024 15:51:36</TimeStamp>
+        <ID>
+          <String>Dim Artist</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p/Dv8Pj+Ajw/5+ZoZ98pDlGg22w=16/02/2024 15:52:2516/02/2024 15:52:25</TimeStamp>
+        <ID>
+          <String>Fact Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+IN1EC3JGwnMsWKV5+X0/Vsr/Is=16/02/2024 15:52:4416/02/2024 15:52:44</TimeStamp>
+        <ID>
+          <String>Dim Employee</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FrVoSdFWoDFPq79TtQfTwFRprME=17/02/2024 18:55:0217/02/2024 18:55:02</TimeStamp>
+        <ID>
+          <String>Dim Invoice</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>JYQF38xm+R0Ux6VBq2162m/cZLE=17/02/2024 21:27:0016/02/2024 15:53:11KPvnRJjDzsI4gpc4zFoTMU7478M=16/02/2024 15:53:1116/02/2024 15:53:11</TimeStamp>
+        <ID>
+          <String>Chinook MART</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>FwwSxaNsbo4NcNdI/qZBDuCm6WU=17/02/2024 21:27:0017/02/2024 21:27:009C50eM+CtnhB0tEGhigKni1pI9g=17/02/2024 21:27:0017/02/2024 21:27:00</TimeStamp>
+        <ID>
+          <String>Chinook MART 1</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>T1LsE7eik23nSLTLtTSVAgz5Gtw=16/02/2024 15:43:4516/02/2024 15:43:45</TimeStamp>
+      <ID>
+        <String>Proyecto</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-02-18T02:27:07.31Z</LastDeployed>
+</DeploymentSnapshot>
